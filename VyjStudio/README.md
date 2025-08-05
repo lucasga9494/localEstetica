@@ -1,3 +1,0 @@
-# vyjStudio
-![](./screenshot.png)
-
