@@ -9,17 +9,56 @@
     <link rel="icon" type="image/x-icon" href="img/UñaPrin.ico" />
   </head>
   <body>
+ 
+
+
+  
+    <nav id="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <img src="./img/vyj.jpg" alt="" style="width: 48px; height: 48px;">
+        </div>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#trabajos">Galería</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        
+
+        <!-- Botón toggle -->
+        <div class="menu-toggle" id="menu-toggle" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
     <!-- Hero Section -->
     <header class="hero">
       <div class="hero-content">
         <h1>VYJ STUDIO</h1>
-        <h2>Realza tu belleza natural con nuestros servicios profesionales</h2><BR>
-     <a href="#contact" ><button class="btn"> Reserva Ahora</button></a>
+        <h2>Realza tu belleza natural con nuestros servicios profesionales</h2><br>
+        <a href="#contact"><button class="btn"> Reserva Ahora</button></a>
       </div>
     </header>
 
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+    <!-- Hero Section -->
+   
+
     <!-- Services Section -->
-    <section class="services">
+    <section class="services" id="services">
       <h2>Nuestros Servicios</h2>
       
       <div class="services-grid">
@@ -47,7 +86,7 @@
           <h3>Manicura</h3>
           <p>
             Tratamientos completos para tus manos, incluyendo diseños exclusivos <br><br>
-            <a href="./manicuria.html" ><button class="btn1"> Galería</button></a>
+           
           </p>
         </div>
         <div class="service-card">
@@ -79,7 +118,7 @@
             
           </p>
           <br>
-            <a href="./pedicuria.html" ><button class="btn1"> Galería</button></a>
+          
         </div>
         <div class="service-card">
           <div class="service-icon">
@@ -104,7 +143,7 @@
           <h3>Cejas</h3>
           <p>Diseño y perfilado de cejas adaptado a tu rostro</p>
           <br><br>
-            <a href="./cejas.html" ><button class="btn1"> Galería</button></a>
+           
         </div>
         <div class="service-card">
           <div class="service-icon">
@@ -131,31 +170,68 @@
           <h3>Pestañas</h3>
           <p>Extensiones y lifting de pestañas para una mirada cautivadora
           <br><br>
-            <a href="./pestañas.html" ><button class="btn1"> Galería</button></a>
+           
             </p>
         </div>
       </div>
     </section>
    
-    <div class="hero-content1">
+    <div class="hero-content1" id="trabajos">
       <h1>Nuestros trabajos</h1>
-      <h2>Si creías que no había solución para tu look, esperá a ver esto. Dejá que nuestras manos hagan el milagro.
-      <!--<button class="btn">Reserva Ahora</button>-->
+   
+    
+     <h1>
+   
+        Galería </h1>
+      <div class="galeria10">
+    <div class="ImgPrincipal">
+        <img src="./img/Manicuria1.jpg" alt="">
+      
+        
+ </div></div>
     </div>
-      <section class="imagenesGaleria">
-      <img src="img/manicuria2.jpg" alt="">
-      <img src="img/manicuria3.jpg" alt="">
-      <img src="img/manicuria4.jpg" alt="">
-      <img src="img/pestañas1.jpg"alt="">
-      <img src="img/pestañas2.jpg"alt="">
-      <img src="img/pestañas3.jpg"alt="">
-      <img src="img/pestañas4.jpg"alt="">
-    </section>
-  
-  </section>
+    <div class="columna">
+    <div class="galeria3">
 
+
+        <img src="./img/pestañas1.jpg" alt="">
+        <img src="./img/pestañas2.jpg" alt="">
+        <img src="./img/pestañas3.jpg" alt="">
+        <img src="./img/pestañas4.jpg" alt="">
+        <img src="./img/Manicuria4.jpg" alt="">
+            <img src="./img/Manicuria2.jpg" alt="">
+            <img src="./img/Manicuria3.jpg" alt="">
+            <img src="./img/Manicuria2.jpg" alt="">
+            <img src="./img/Manicuria3.jpg" alt="">
+            <img src="./img/Manicuria4.jpg" alt="">   <img src="./img/pestañas1.jpg" alt="">
+  <img src="./img/Manicuria4.jpg" alt="">
+
+        </div>  </div>
+    </div>
+         <div class="galeria10">
+    <div class="ImgPrincipal">
+        <img src="./img/Manicuria1.jpg" alt="">
+      
+        
+ </div>
+    </div>
+     <div class="columna">
+    <div class="galeria3">
+          <img src="./img/pestañas2.jpg" alt="">
+        <img src="./img/pestañas3.jpg" alt="">
+        <img src="./img/pestañas4.jpg" alt="">
+        <img src="./img/Manicuria4.jpg" alt="">
+            <img src="./img/Manicuria2.jpg" alt="">
+            <img src="./img/Manicuria3.jpg" alt="">
+            <img src="./img/Manicuria2.jpg" alt="">
+            <img src="./img/Manicuria3.jpg" alt="">
+            
+               </div>  </div>
+    </div>
+         
+</body>
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-content">
         <div class="about-image">
           <img src="img/vyj.jpg" alt="Salon Interior" />
@@ -270,7 +346,9 @@
 
     <!-- Footer -->
     <footer>
-      <p> VyJ Studio 2025, todos los derechos reservados por Lucas Ezequiel García Aran</p>
+    <a href="https://www.instagram.com/vyj_beauty" style="color: white;"> <i class="fa-brands fa-instagram"></i> Vyj_beauty</a>
+      <a href="https://api.whatsapp.com/send/?phone=01123889152&text&type=phone_number&app_absent=0" style="color: white;"> <i class="fa-brands fa-whatsapp"></i> 1123889152</a>
+    <p> VyJ Studio 2025, todos los derechos reservados por Lucas Ezequiel García Aran</p>
     </footer>
   </body>
   <a href=" https://api.whatsapp.com/send/?phone=01123889152&text&type=phone_number&app_absent=0"class="btn_wp"target=blank>
