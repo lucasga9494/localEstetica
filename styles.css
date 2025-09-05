@@ -445,28 +445,28 @@ footer {
 }
 .btn_wp {
   position: fixed;
-  width: 60px;
+  width: 50px;
   height: 50px;
-  line-height: 50px;
+  line-height: 47px;
   bottom: 30px;
   right: 30px;
   background: #0df053;
   color: #fff;
-  border-radius: 60px;
+  border-radius: 100px;
   text-align: center;
   font-size: 30px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
 .btn_insta {
   position: fixed;
-  width: 60px;
+  width: 50px;
   height: 50px;
-  line-height: 50px;
+  line-height: 47px;
   bottom: 30px;
   right: 100px;
   background: #fff;
   color: #fff;
-  border-radius: 60px;
+  border-radius: 100px;
   text-align: center;
   font-size: 30px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
